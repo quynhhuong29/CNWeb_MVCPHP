@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Danh sach sinh vien</title>
+    </head>
+    <body>
+        <h2>Danh sach sinh vien:</h2>
+        <?php
+            for($i=1;$i<= sizeof($students);$i++){
+                echo "<p>".$i.". ".$students[$i]->name."</a></p>";
+                echo "<p>".$students[$i]->age."</p>";
+                echo "<p>".$students[$i]->university."</p> </br>";
+            }
+        ?>
+        <br>
+        <p><a href="../index.php">Home page</a></p>
+    </body>
+</html>

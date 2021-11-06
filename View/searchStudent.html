@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Student</title>
+</head>
+<body>
+    <form action="../Controller/C_Student.php" method="post">
+        <table width="400" height="100" cellpadding="4" align="center">
+            <tr>
+                <th colspan="2">Tìm kiếm thông tin sinh viên</th>
+            </tr>
+
+            <tr>
+                <td>Trường</td>
+                <td>
+                    <select name="searchSelect" witdth="100%">
+                        <option value="ID">ID</option>
+                        <option value="Name">Name</option>
+                        <option value="Age">Age</option>
+                        <option value="University">University</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Thông tin:</td>
+                <td><input type="text" name="txtSearch" placeholder="Thông tin sinh viên" required="required"
+                    size="40"></td>
+            </tr>
+
+        </table>
+        <center>
+            <input type="submit" name="search" value="OK">
+            <input type="reset" name="reset" value="Reset">
+            <p><a href="../index.php">Trang chủ</a></p>
+        </center>
+    </form>
+</body>
+</html>
